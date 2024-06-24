@@ -11,7 +11,7 @@ function App() {
                 data.sort((a, b) => a.name.common.localeCompare(b.name.common));
                 setCountries(data);
             });
-    });
+    }, []);
     return (
         <div className="min-h-screen bg-slate-800">
             <div className="max-w-7xl mx-auto py-20 px-4">
